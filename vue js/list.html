@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Vue JS</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<input v-model="message"><br />
+		{{ message }}
+
+		<ul>
+			<li v-for="items in items_list"> {{ item }} </li>
+		</ul>
+	</div>
+
+	<script>
+		new Vue({
+			el:'#app',
+			data: {
+				'message': 'hello vue js'
+				'items_list' :['item1','item2','item3']
+			}
+		});
+	</script>
+</body>
+</html>
